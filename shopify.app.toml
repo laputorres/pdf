@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "85bdcdad42ab49cf4bd324c24d12cd34"
+name = "pdf"
+handle = "pdf-8"
+application_url = "https://basketball-advocate-liabilities-workers.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "pruebas-aplicaciones.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,read_products,write_order_edits,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://basketball-advocate-liabilities-workers.trycloudflare.com/auth/callback",
+  "https://basketball-advocate-liabilities-workers.trycloudflare.com/auth/shopify/callback",
+  "https://basketball-advocate-liabilities-workers.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
